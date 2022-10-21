@@ -18,7 +18,9 @@ virus.py will encrypt its own body. It will append the (unencrypted) decryption 
 file and after that it will append its encrypted virus body into the file. Last, it will execute its payload which in
 our case is a simple: 
 
-```print('Hello World!')
+```
+print('Hello World!')
+
 ```
 
 Now, the newly infected file contains, in addition to its own code, the decryption routine + the **encrypted** virus body (which includes the payload and the replication logic).
